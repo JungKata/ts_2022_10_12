@@ -1,15 +1,23 @@
-let t = [1, 2, 3];
-t = t.filter(e => e > 2);
+var symbolus = /[. , : ; ? ' ' \" - = ~ ! @ # $ % ^ & * ( ) _ + / < > {}]/;
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('szoveg')!.addEventListener('input', (e) =>{
-    //let elem = document.getElementById('szoveg') as HTMLInputElement;
-    //document.body.style.backgroundColor = elem.value;
+    const usname = document.getElementById('felhasznalonev') as HTMLInputElement | null;
+    const namevalue = usname?.value;
 
-    let elem = e.currentTarget as HTMLInputElement;
-    document.body.style.backgroundColor = elem.value;
-    
+    if(namevalue != null){
+        if(namevalue.length > 30 || namevalue?.length < 6){
+        (document.getElementById('usernameerror') as HTMLElement).textContent = "A felhasználónév nem lehet hosszabb 30 karakternél és rövidebb se 6-nál"
+        }
+
+        else if(symbolus.test(namevalue) == true ){
+            
+        }
+        
+
+    }else{
+        
+    }
+
    });
    
-});

@@ -5,7 +5,7 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
-<html>
+<html lang="hu">
 <head>
 <title>Creative Colorlib SignUp Form</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,7 +25,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="main-agileinfo">
 			<div class="agileits-top">
 				<form action="#" method="post">
-					<input class="text" type="text" name="Username" placeholder="Username" required="">
+					<input class="text" type="text" name="Username" placeholder="Username" required="" id="Felhasznalonev" >
+					<p id="username_error">Hiba üzenet</p>
 					<input class="text email" type="email" name="email" placeholder="Email" required="">
 					<input class="text" type="password" name="password" placeholder="Password" required="">
 					<div class="wthree-text">
@@ -59,5 +60,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</ul>
 	</div>
 	<!-- //main -->
+	<script src="src/index.js"></script>
 </body>
 </html>
